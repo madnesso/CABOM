@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.thicc.cabom.ui.main.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.thicc.cabom.ui.main.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.thicc.cabom.ui.main.GraphFragment"
+        android:label="graph_fragment"
+        tools:layout="@layout/graph_fragment" />
+    <fragment
+        android:id="@+id/hossamFragment"
+        android:name="com.thicc.cabom.ui.main.HossamFragment"
+        android:label="hossam_fragment"
+        tools:layout="@layout/hossam_fragment" />
+</navigation>
