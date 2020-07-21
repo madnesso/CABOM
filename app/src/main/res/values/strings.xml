@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CABOM</string>
+    <string name="lesson_1_refrence">Lesson 1 Refrence</string>
+    <string name="support_systems">Support Systems</string>
 </resources>
