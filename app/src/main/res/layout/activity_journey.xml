@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2fcfa"
+    tools:context=".Journey">
+
+    <com.google.android.material.progressindicator.ProgressIndicator
+        android:layout_width="185dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="116dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundshapebtn"
+        android:gravity="center"
+        android:text="@string/lesson_1_refrence"
+        android:textColor="#1f314a"
+        app:layout_constraintEnd_toStartOf="@+id/image1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="409dp"
+        android:layout_height="378dp"
+        android:layout_marginStart="2dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Title"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/support_systems"
+        android:textColor="#1f314a"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Introduction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2"
+        android:layout_width="54dp"
+        android:layout_height="85dp"
+
+        android:layout_marginTop="16dp"
+        android:src="@drawable/shape"
+        app:layout_constraintBottom_toTopOf="@+id/image1"
+        app:layout_constraintEnd_toStartOf="@+id/Title"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image1"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/checked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/kalam"
+        android:layout_width="376dp"
+        android:layout_height="322dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#1f314a"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="The first building block of emotional intelligence is self-awareness. Self-awareness is our ability to recognize our own emotions and their effects on us and others. Without being aware of and understanding our own emotions, it will be difficult for us to move into the other emotional competencies like self-management, social awareness, or team leadership.Self-improvement is also referred to as personal-development can be said as the improvement to one’s own mind and characterthrough one’s own efforts. It is a conscious process where one decides to take oneself in hand and change their life-for the better(introduction to self improvement)." />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Introduction"
+        style="@style/TextAppearance.MaterialComponents.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="#1f314a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kalam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Introduction" />
+
+    <VideoView
+        android:layout_width="413dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
