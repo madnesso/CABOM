@@ -2,4 +2,10 @@
     <string name="app_name">CABOM</string>
     <string name="lesson_1_refrence">Lesson 1 Refrence</string>
     <string name="support_systems">Support Systems</string>
+    <string name="todo">TODO</string>
+    <string name="badges">Badges</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="profile_picture_of_the_user">profile picture of the user</string>
+    <string name="rank_of_the_user">rank of the user</string>
+    <string name="achievements">Achievements</string>
 </resources>
