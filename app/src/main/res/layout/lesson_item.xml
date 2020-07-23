@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bubblesImg"
+        android:layout_width="160dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="90dp"
+        android:src="@drawable/bubbles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lessonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/bubblesImg"
+        app:layout_constraintStart_toStartOf="@+id/bubblesImg"
+        app:layout_constraintTop_toTopOf="@+id/bubblesImg" />
+
+    <TextView
+        android:id="@+id/lessonNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lesson X"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/lessonTitle"
+        app:layout_constraintStart_toStartOf="@+id/lessonTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lessonTitle" />
+
+    <TextView
+        android:id="@+id/lessonDescription"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="building an integral support system, Pushs you to grow, Streches more, maily asks why things won't work, and bullet ptoof ideas."
+        app:layout_constraintEnd_toEndOf="@+id/bubblesImg"
+        app:layout_constraintStart_toStartOf="@+id/bubblesImg"
+        app:layout_constraintTop_toBottomOf="@+id/lessonNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lessonItemBtn"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_shape_btn_greenish"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/bubblesImg"
+        app:layout_constraintEnd_toEndOf="@+id/lessonDescription"
+        app:layout_constraintStart_toStartOf="@+id/lessonDescription"
+        app:layout_constraintTop_toBottomOf="@+id/lessonDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

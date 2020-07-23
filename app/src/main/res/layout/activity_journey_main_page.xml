@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/half_blue_half_white_background"
+    tools:context=".JourneyMainPage">
+
+    <TextView
+        android:id="@+id/awarenessRoomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awareness Room"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.ProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="185dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/awarenessRoomText"
+        app:layout_constraintStart_toStartOf="@+id/awarenessRoomText"
+        app:layout_constraintTop_toBottomOf="@+id/awarenessRoomText" />
+
+    <ImageView
+        android:id="@+id/topLeftImg"
+        android:layout_width="44dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/awarenessRoomText"
+        app:layout_constraintTop_toBottomOf="@+id/progressIndicator"
+        app:srcCompat="@drawable/book_shelf" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topLeftBtn"
+        android:layout_width="131dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_shape_btn_white"
+        android:text="Support System"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/topLeftImg"
+        app:layout_constraintStart_toStartOf="@+id/topLeftImg"
+        app:layout_constraintTop_toBottomOf="@+id/topLeftImg" />
+
+    <ImageView
+        android:id="@+id/topRightImg"
+        android:layout_width="81dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/awarenessRoomText"
+        app:layout_constraintTop_toBottomOf="@+id/progressIndicator"
+        app:srcCompat="@drawable/info" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topRightBtn"
+        android:layout_width="131dp"
+        android:layout_height="29dp"
+        android:background="@drawable/round_shape_btn_white"
+        android:text="Core Values"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeftBtn"
+        app:layout_constraintEnd_toEndOf="@+id/topRightImg"
+        app:layout_constraintStart_toStartOf="@+id/topRightImg" />
+
+    <ImageView
+        android:id="@+id/bottomRightImg"
+        android:layout_width="81dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/topRightImg"
+        app:layout_constraintStart_toStartOf="@+id/topRightImg"
+        app:layout_constraintTop_toBottomOf="@+id/topRightBtn"
+        app:srcCompat="@drawable/info" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomRightBtn"
+        android:layout_width="137dp"
+        android:layout_height="29dp"
+        android:background="@drawable/round_shape_btn_white"
+        android:text="Goals &amp; Aspirations"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomLeftBtn"
+        app:layout_constraintEnd_toEndOf="@+id/bottomRightImg"
+        app:layout_constraintStart_toStartOf="@+id/bottomRightImg" />
+
+    <ImageView
+        android:id="@+id/bottomLeftImg"
+        android:layout_width="81dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/topLeftImg"
+        app:layout_constraintStart_toStartOf="@+id/topLeftImg"
+        app:layout_constraintTop_toBottomOf="@+id/topLeftBtn"
+        app:srcCompat="@drawable/info" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomLeftBtn"
+        android:layout_width="137dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_shape_btn_white"
+        android:fontFamily="sans-serif-medium"
+        android:text="Strength-Weakness"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bottomLeftImg"
+        app:layout_constraintStart_toStartOf="@+id/bottomLeftImg"
+        app:layout_constraintTop_toBottomOf="@+id/bottomLeftImg" />
+
+    <TextView
+        android:id="@+id/selfAwarenessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Self Awareness"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomRightBtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="409dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selfAwarenessText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
