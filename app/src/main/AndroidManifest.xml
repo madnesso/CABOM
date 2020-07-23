@@ -9,11 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Congratz" />
+        <activity android:name=".Congratz"></activity>
         <activity android:name=".ui.main.OnBoarding1" />
         <activity android:name=".ui.Journey" />
-        <activity android:name=".JourneyMainPage">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
