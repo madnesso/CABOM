@@ -18,8 +18,7 @@ class HossamFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.hossam_fragment, container, false)
     }
 
