@@ -74,8 +74,8 @@
             android:id="@+id/Medal_c"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="352dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="404dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/icon" />
@@ -114,104 +114,106 @@
             android:id="@+id/Quick_Learner_c"
             android:layout_width="130sp"
             android:layout_height="25dp"
-            android:layout_marginTop="352dp"
-            tools:text="Quick Learner"
+            android:layout_marginTop="404dp"
             android:textColor="#1f314a"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.405"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/Master_Mind_c"
-            android:layout_width="130sp"
-            android:layout_height="25dp"
-            android:layout_marginTop="417dp"
-            tools:text="Master Mind!"
-            android:textColor="#1f314a"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/Super_Learner_c"
-            android:layout_width="130sp"
-            android:layout_height="25dp"
-            android:layout_marginTop="481dp"
-            tools:text="Super Learner"
-            android:textColor="#1f314a"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/Achiever_c"
-            android:layout_width="130sp"
-            android:layout_height="25dp"
-            android:layout_marginTop="546dp"
-            tools:text="The Achiever"
-            android:textColor="#1f314a"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Quick Learner" />
 
         <TextView
             android:id="@+id/Completed_c"
             android:layout_width="170sp"
             android:layout_height="30dp"
-            android:layout_marginTop="8dp"
-            tools:text="Completed 1 Course"
+            android:layout_marginTop="4dp"
             android:textAlignment="center"
             android:textColor="#1f314a"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Quick_Learner_c" />
+            app:layout_constraintTop_toBottomOf="@+id/Quick_Learner_c"
+            tools:text="Completed 1 Course" />
 
         <TextView
             android:id="@+id/Got_c"
             android:layout_width="230sp"
             android:layout_height="30dp"
-            android:layout_marginTop="4dp"
-            tools:text="Got 1st place in leaderboard"
+            android:layout_marginTop="16dp"
             android:textColor="#1f314a"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.629"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Master_Mind_c" />
+            app:layout_constraintTop_toBottomOf="@+id/Master_Mind_c"
+            tools:text="Got 1st place in leaderboard" />
+
+        <TextView
+            android:id="@+id/Super_Learner_c"
+            android:layout_width="130sp"
+            android:layout_height="25dp"
+            android:layout_marginTop="532dp"
+            android:textColor="#1f314a"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.405"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Super Learner" />
 
         <TextView
             android:id="@+id/Completed_More_c"
             android:layout_width="200sp"
             android:layout_height="30dp"
-            tools:text="Completed more than 5 courses"
+            android:layout_marginTop="12dp"
             android:textColor="#1f314a"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Super_Learner_c" />
+            app:layout_constraintTop_toBottomOf="@+id/Super_Learner_c"
+            tools:text="Completed more than 5 courses" />
+
+        <TextView
+            android:id="@+id/Achiever_c"
+            android:layout_width="130sp"
+            android:layout_height="25dp"
+            android:layout_marginTop="596dp"
+            android:textColor="#1f314a"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.405"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="The Achiever" />
 
         <TextView
             android:id="@+id/Logged_In_c"
             android:layout_width="270sp"
             android:layout_height="30dp"
-            tools:text="Logged in everyday for a month"
+            android:layout_marginTop="12dp"
             android:textColor="#1f314a"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.808"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Achiever_c" />
+            app:layout_constraintTop_toBottomOf="@+id/Achiever_c"
+            tools:text="Logged in everyday for a month" />
+
+        <TextView
+            android:id="@+id/Master_Mind_c"
+            android:layout_width="130sp"
+            android:layout_height="25dp"
+            android:layout_marginTop="468dp"
+            android:textColor="#1f314a"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.405"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Master Mind!" />
 
         <Button
             android:id="@+id/Menu_c"
@@ -237,12 +239,12 @@
             android:id="@+id/Course_Number_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="52dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="@+id/Courses_c"
-            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toStartOf="@+id/Courses_c"
             app:layout_constraintTop_toBottomOf="@+id/Student_c"
             tools:text="7" />
@@ -251,8 +253,8 @@
             android:id="@+id/Points_Number_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="108dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="52dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
             android:textSize="25dp"
@@ -264,8 +266,8 @@
             android:id="@+id/Rank_Number_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="52dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
             android:textSize="25dp"

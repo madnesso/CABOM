@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".ui.Questions">
+
+
+    <Button
+        android:id="@+id/Close_c"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Shape_c"
+        android:layout_width="54dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/shape"
+        app:layout_constraintStart_toEndOf="@+id/Close_c"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Support_System_c"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/support_systems"
+        android:textColor="#1f314a"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Shape_c"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.ProgressIndicator
+        android:id="@+id/Progress_Bar_c"
+        android:layout_width="185dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/Support_System_c"
+        app:layout_constraintTop_toBottomOf="@+id/Support_System_c" />
+
+    <TextView
+        android:id="@+id/Quiz_c"
+        android:layout_width="126dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white_rounded_button"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#1f314a"
+        app:layout_constraintEnd_toEndOf="@+id/Shape_c"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/Shape_c"
+        app:layout_constraintTop_toBottomOf="@+id/Shape_c"
+        tools:text="Lesson 1 Quiz" />
+
+    <TextView
+        android:id="@+id/Question_c"
+        android:layout_width="316dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#1f314a"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Quiz_c"
+        tools:text="Course related question goes in here?" />
+
+    <RadioGroup
+        android:id="@+id/Radio_Group_1_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Question_c"
+        app:layout_constraintVertical_bias="0.063">
+
+        <TextView
+            android:id="@+id/Answer_1_c"
+            style="@style/RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/white_answers_with_borders"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="13dp"
+            android:textColor="#22d0c4"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="375dp"
+            tools:text="Answer 1" />
+
+        <TextView
+            android:id="@+id/Answer_2_c"
+            style="@style/RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/white_answers"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="13dp"
+            android:textColor="#1f314a"
+            tools:text="Answer 2" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Radio_Group_2_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Radio_Group_1_c"
+        app:layout_constraintVertical_bias="0.094">
+
+        <TextView
+            android:id="@+id/Answer_3_c"
+            style="@style/RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/white_answers"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="13dp"
+            android:textColor="#1f314a"
+            tools:text="Answer 3" />
+
+        <TextView
+            android:id="@+id/Answer_4_c"
+            style="@style/RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/white_answers"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="13dp"
+            android:textColor="#1f314a"
+            tools:text="Answer 4" />
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Submit_c"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_blue_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Radio_Group_2_c" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView_c"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="250sp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="631dp"
+        app:cardCornerRadius="50dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintButton_toButtonOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndtOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Rounded_Profile_Picture_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintButton_toButtonOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndtOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/ic_launcher_background" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/Group_c"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="183dp"
+        android:visibility="invisible"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Quiz_c"
+        app:layout_constraintTop_toTopOf="@+id/myCardView_c"
+        app:srcCompat="@drawable/group" />
+
+    <TextView
+        android:id="@+id/Speaker_Name_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:visibility="invisible"
+        android:textColor="#1f314a"
+        app:layout_constraintStart_toStartOf="@+id/myCardView_c"
+        app:layout_constraintTop_toBottomOf="@+id/myCardView_c"
+        tools:text="Ray" />
+
+    <ImageView
+        android:id="@+id/Microphone_c"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/myCardView_c"
+        app:layout_constraintTop_toTopOf="@+id/myCardView_c"
+        app:srcCompat="@drawable/microphone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
