@@ -7,6 +7,13 @@
     android:background="#d2fcfa"
     tools:context=".ui.main.HossamFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,10 +24,9 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="70dp"
             android:layout_marginBottom="631dp"
             app:cardCornerRadius="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -47,7 +53,7 @@
             tools:text="Emily Petersz"
             android:textAlignment="center"
             android:textColor="#1f314a"
-            android:textSize="25sp"
+            android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +66,7 @@
             tools:text="Student"
             android:textAlignment="center"
             android:textColor="#1f314a"
-            android:textSize="25sp"
+            android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,10 +76,10 @@
             android:id="@+id/Medal_c"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="404dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Courses_c"
             app:srcCompat="@drawable/icon" />
 
         <ImageView
@@ -110,25 +116,25 @@
             android:id="@+id/Quick_Learner_c"
             android:layout_width="130sp"
             android:layout_height="25dp"
-            android:layout_marginTop="404dp"
+            android:layout_marginTop="32dp"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
+            app:layout_constraintHorizontal_bias="0.402"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Points_c"
             tools:text="Quick Learner" />
 
         <TextView
             android:id="@+id/Completed_c"
             android:layout_width="170sp"
             android:layout_height="30dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="0dp"
             android:textAlignment="center"
             android:textColor="#1f314a"
-            android:textSize="18sp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintHorizontal_bias="0.468"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Quick_Learner_c"
             tools:text="Completed 1 Course" />
@@ -137,9 +143,9 @@
             android:id="@+id/Got_c"
             android:layout_width="230sp"
             android:layout_height="30dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="0dp"
             android:textColor="#1f314a"
-            android:textSize="18sp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.629"
             app:layout_constraintStart_toStartOf="parent"
@@ -150,22 +156,22 @@
             android:id="@+id/Super_Learner_c"
             android:layout_width="130sp"
             android:layout_height="25dp"
-            android:layout_marginTop="532dp"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.405"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Got_c"
             tools:text="Super Learner" />
 
         <TextView
             android:id="@+id/Completed_More_c"
             android:layout_width="200sp"
             android:layout_height="30dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="0dp"
             android:textColor="#1f314a"
-            android:textSize="18sp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
@@ -176,22 +182,22 @@
             android:id="@+id/Achiever_c"
             android:layout_width="130sp"
             android:layout_height="25dp"
-            android:layout_marginTop="596dp"
+            android:layout_marginTop="8dp"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
+            app:layout_constraintHorizontal_bias="0.402"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Completed_More_c"
             tools:text="The Achiever" />
 
         <TextView
             android:id="@+id/Logged_In_c"
             android:layout_width="270sp"
             android:layout_height="30dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="0dp"
             android:textColor="#1f314a"
-            android:textSize="18sp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.808"
             app:layout_constraintStart_toStartOf="parent"
@@ -202,13 +208,13 @@
             android:id="@+id/Master_Mind_c"
             android:layout_width="130sp"
             android:layout_height="25dp"
-            android:layout_marginTop="468dp"
+            android:layout_marginTop="8dp"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.405"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Completed_c"
             tools:text="Master Mind!" />
 
         <Button
@@ -238,7 +244,7 @@
             android:layout_marginTop="52dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
-            android:textSize="25sp"
+            android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="@+id/Courses_c"
             app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toStartOf="@+id/Courses_c"
@@ -253,7 +259,7 @@
             android:layout_marginTop="52dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
-            android:textSize="25sp"
+            android:textSize="25dp"
             app:layout_constraintStart_toEndOf="@+id/Course_Number_c"
             app:layout_constraintTop_toBottomOf="@+id/Student_c"
             tools:text="193,797" />
@@ -266,7 +272,7 @@
             android:layout_marginTop="52dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
-            android:textSize="25sp"
+            android:textSize="25dp"
             app:layout_constraintStart_toEndOf="@+id/Points_Number_c"
             app:layout_constraintTop_toBottomOf="@+id/Student_c"
             tools:text="11" />
@@ -278,7 +284,7 @@
             android:layout_marginStart="100dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/Points_c"
             app:layout_constraintStart_toEndOf="@+id/Points_c"
             app:layout_constraintTop_toBottomOf="@+id/Rank_Number_c"
@@ -292,7 +298,7 @@
             android:layout_marginStart="84dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/Courses_c"
             app:layout_constraintStart_toEndOf="@+id/Courses_c"
             app:layout_constraintTop_toBottomOf="@+id/Points_Number_c"
@@ -307,12 +313,13 @@
             android:layout_marginTop="4dp"
             android:gravity="center_horizontal"
             android:textColor="#1f314a"
-            android:textSize="20sp"
+            android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Course_Number_c"
             tools:text="Courses" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+</ScrollView>
 
-</FrameLayout>
+    </FrameLayout>

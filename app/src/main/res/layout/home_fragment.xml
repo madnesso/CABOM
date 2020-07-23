@@ -1,13 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d2fcfa"
     tools:context=".ui.main.HomeFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Info_c"
+                android:layout_width="351dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/extra_rounded_white_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myCardView_c"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="@id/Info_c"
+                app:layout_constraintStart_toStartOf="@id/Info_c"
+                app:layout_constraintTop_toTopOf="@id/Info_c"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="42dp">
+
+                <ImageView
+                    android:id="@+id/Rounded_Profile_Picture_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:background="@drawable/ic_launcher_background"
+                    tools:layout_editor_absoluteX="-64dp"
+                    tools:layout_editor_absoluteY="-149dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Yourself_Journey_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="7dp"
+                android:textColor="#1f314a"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/Info_c"
+                app:layout_constraintTop_toTopOf="@+id/Info_c"
+                tools:text="Yourself Journey" />
+
+            <TextView
+                android:id="@+id/Yourself_Journey_Percentage_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textColor="#22d0c4"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/Yourself_Journey_c"
+                app:layout_constraintTop_toTopOf="@+id/Yourself_Journey_c"
+                tools:text="30%" />
+
+            <ImageView
+                android:id="@+id/icon_c"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/icon"
+                app:layout_constraintStart_toEndOf="@+id/myCardView_c"
+                app:layout_constraintTop_toBottomOf="@+id/Yourself_Journey_c" />
+
+            <ImageView
+                android:id="@+id/icon_2_c"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_2"
+                app:layout_constraintStart_toEndOf="@+id/icon_c"
+                app:layout_constraintTop_toBottomOf="@+id/Yourself_Journey_c" />
+
+            <ImageView
+                android:id="@+id/icon_4_c"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_4"
+                app:layout_constraintStart_toEndOf="@+id/icon_2_c"
+                app:layout_constraintTop_toBottomOf="@+id/Yourself_Journey_c" />
+
+            <TextView
+                android:id="@+id/Rank_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="28dp"
+                android:textColor="#1f314a"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/icon_4_c"
+                app:layout_constraintTop_toTopOf="@+id/Yourself_Journey_Percentage_c"
+                tools:text="Rank: 3rd" />
+
+            <ImageView
+                android:id="@+id/mountain_c"
+                android:layout_width="304dp"
+                android:layout_height="216dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/maountains"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Info_c" />
+
+            <ImageView
+                android:id="@+id/line_1_c"
+                android:layout_width="51dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="136dp"
+                android:src="@drawable/bold_line"
+                app:layout_constraintEnd_toStartOf="@+id/mountain_c"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mountain_c" />
+
+            <ImageView
+                android:id="@+id/line_2_c"
+                android:layout_width="82dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_1_c" />
+
+            <ImageView
+                android:id="@+id/mind_c"
+                android:layout_width="287dp"
+                android:layout_height="197dp"
+                android:src="@drawable/mind_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.43"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mountain_c" />
+
+            <ImageView
+                android:id="@+id/line_3_c"
+                android:layout_width="219dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="122dp"
+                android:scaleY="-1"
+                android:src="@drawable/right_curverd_line"
+                app:layout_constraintStart_toStartOf="@+id/mind_c"
+                app:layout_constraintTop_toBottomOf="@+id/mountain_c" />
+
+            <ImageView
+                android:id="@+id/line_4_c"
+                android:layout_width="105dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="287dp"
+                android:layout_marginTop="548dp"
+                android:scaleX="-1"
+                android:scaleY="-1"
+                android:src="@drawable/bold_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/awareness_c"
+                android:layout_width="166dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:src="@drawable/self_awarness_icon"
+                app:layout_constraintEnd_toEndOf="@+id/line_4_c"
+                app:layout_constraintTop_toBottomOf="@+id/mind_c" />
+
+            <ImageView
+                android:id="@+id/line_5_c"
+                android:layout_width="251dp"
+                android:layout_height="161dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="168dp"
+                android:src="@drawable/right_curverd_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_3_c" />
+
+            <ImageView
+                android:id="@+id/cloud_c"
+                android:layout_width="107dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/clouds"
+                app:layout_constraintEnd_toStartOf="@+id/awareness_c"
+                app:layout_constraintHorizontal_bias="0.818"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mind_c" />
+
+            <ImageView
+                android:id="@+id/random_lines_c"
+                android:layout_width="47dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/lines"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.157"
+                app:layout_constraintStart_toEndOf="@+id/mind_c"
+                app:layout_constraintTop_toBottomOf="@+id/mountain_c" />
+
+            <ImageView
+                android:id="@+id/tree_c"
+                android:layout_width="93dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/tree"
+                app:layout_constraintStart_toStartOf="@+id/line_3_c"
+                app:layout_constraintTop_toTopOf="@+id/line_3_c" />
+
+            <TextView
+                android:id="@+id/Personal_Branding_c"
+                android:layout_width="173dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="176dp"
+                android:background="@drawable/extra_rounded_white_button"
+                android:gravity="center_horizontal"
+                android:text="Personal-Branding"
+                android:paddingTop="6dp"
+                android:textColor="#1f314a"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/mountain_c"
+                app:layout_constraintTop_toTopOf="@+id/mountain_c" />
+
+            <TextView
+                android:id="@+id/Mind_Mapping_c"
+                android:layout_width="143dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/extra_rounded_white_button"
+                android:gravity="center_horizontal"
+                android:paddingTop="6dp"
+                android:text="Mind-Mapping"
+                android:textColor="#1f314a"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/mind_c"
+                app:layout_constraintTop_toTopOf="@+id/mind_c" />
+
+            <TextView
+                android:id="@+id/Self_Awareness_c"
+                android:layout_width="143dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/extra_rounded_white_button"
+                android:gravity="center_horizontal"
+                android:paddingTop="6dp"
+                android:text="Self-Awareness"
+                android:textColor="#1f314a"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/awareness_c"
+                app:layout_constraintTop_toTopOf="@+id/awareness_c" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </FrameLayout>
