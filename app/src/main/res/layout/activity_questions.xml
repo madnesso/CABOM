@@ -178,9 +178,7 @@
         app:cardCornerRadius="50dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintButton_toButtonOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toEndtOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -190,9 +188,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:visibility="invisible"
-            app:layout_constraintButton_toButtonOf="parent"
+            android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toEndtOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:background="@drawable/ic_launcher_background" />
