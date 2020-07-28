@@ -7,14 +7,25 @@
     android:background="#d2fcfa"
     tools:context=".ui.Journey">
 
-    <com.google.android.material.progressindicator.ProgressIndicator
-        android:layout_width="185dp"
-        android:layout_height="5dp"
-        android:layout_marginTop="12dp"
+    <com.library.NavigationBar
+        android:id="@+id/navBar"
+        android:layout_width="403dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="160dp"
+        android:background="#ffffffff"
+        android:padding="6dp"
+        app:central_line_height="1dp"
+        app:enable_border="true"
+        app:layout_constraintBottom_toTopOf="@+id/Title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
-        app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
-        app:layout_constraintTop_toBottomOf="@+id/Title" />
+        app:only_border="false"
+        app:tab_border_color_array="@array/border_state_colors"
+        app:tab_color_array="@array/indicator_colors"
+        app:tab_indicator_color="@color/darkYellow"
+        app:tab_padding="48dp"
+        app:tab_strok_width="3dp"
+        app:tab_text_color_array="@array/text_state_colors"
+        app:tab_text_size="18sp" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView3"
